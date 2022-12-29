@@ -19,6 +19,10 @@
 		EF80D1D5295DA02B00241D2F /* riseup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EF80D1CD295DA02B00241D2F /* riseup.mp3 */; };
 		EF80D1D6295DA02B00241D2F /* casino-chips.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EF80D1CE295DA02B00241D2F /* casino-chips.mp3 */; };
 		EF80D1D7295DA02B00241D2F /* game-over.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EF80D1CF295DA02B00241D2F /* game-over.mp3 */; };
+		EF80D1DD295DAD0A00241D2F /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF80D1DC295DAD0A00241D2F /* LogoView.swift */; };
+		EF80D1DF295DAD4400241D2F /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF80D1DE295DAD4400241D2F /* Modifiers.swift */; };
+		EFC04CFD295DB30800C54AB3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC04CFC295DB30800C54AB3 /* Extensions.swift */; };
+		EFC04CFF295DB4AE00C54AB3 /* ReelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC04CFE295DB4AE00C54AB3 /* ReelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +39,11 @@
 		EF80D1CD295DA02B00241D2F /* riseup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = riseup.mp3; sourceTree = "<group>"; };
 		EF80D1CE295DA02B00241D2F /* casino-chips.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "casino-chips.mp3"; sourceTree = "<group>"; };
 		EF80D1CF295DA02B00241D2F /* game-over.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "game-over.mp3"; sourceTree = "<group>"; };
+		EF80D1DB295DA3D800241D2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EF80D1DC295DAD0A00241D2F /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		EF80D1DE295DAD4400241D2F /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
+		EFC04CFC295DB30800C54AB3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		EFC04CFE295DB4AE00C54AB3 /* ReelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +76,7 @@
 		EF80D1B9295D9D7100241D2F /* SlotMachineGame */ = {
 			isa = PBXGroup;
 			children = (
+				EF80D1DB295DA3D800241D2F /* Info.plist */,
 				EF80D1DA295DA04A00241D2F /* Helpers */,
 				EF80D1D8295DA03300241D2F /* Sounds */,
 				EF80D1BA295D9D7100241D2F /* SlotMachineGameApp.swift */,
@@ -104,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				EF80D1BC295D9D7100241D2F /* ContentView.swift */,
+				EF80D1DC295DAD0A00241D2F /* LogoView.swift */,
+				EFC04CFE295DB4AE00C54AB3 /* ReelView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -111,6 +123,8 @@
 		EF80D1DA295DA04A00241D2F /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				EF80D1DE295DAD4400241D2F /* Modifiers.swift */,
+				EFC04CFC295DB30800C54AB3 /* Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -193,7 +207,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFC04CFF295DB4AE00C54AB3 /* ReelView.swift in Sources */,
+				EFC04CFD295DB30800C54AB3 /* Extensions.swift in Sources */,
+				EF80D1DF295DAD4400241D2F /* Modifiers.swift in Sources */,
 				EF80D1BD295D9D7100241D2F /* ContentView.swift in Sources */,
+				EF80D1DD295DAD0A00241D2F /* LogoView.swift in Sources */,
 				EF80D1BB295D9D7100241D2F /* SlotMachineGameApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,9 +344,9 @@
 				DEVELOPMENT_TEAM = A38548G3Y3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SlotMachineGame/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -355,9 +373,9 @@
 				DEVELOPMENT_TEAM = A38548G3Y3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SlotMachineGame/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
