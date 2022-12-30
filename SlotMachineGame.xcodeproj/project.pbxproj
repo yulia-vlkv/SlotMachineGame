@@ -23,6 +23,8 @@
 		EF80D1DF295DAD4400241D2F /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF80D1DE295DAD4400241D2F /* Modifiers.swift */; };
 		EFC04CFD295DB30800C54AB3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC04CFC295DB30800C54AB3 /* Extensions.swift */; };
 		EFC04CFF295DB4AE00C54AB3 /* ReelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC04CFE295DB4AE00C54AB3 /* ReelView.swift */; };
+		EFC04D01295ED9C900C54AB3 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC04D00295ED9C900C54AB3 /* InfoView.swift */; };
+		EFC04D03295EF7DB00C54AB3 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC04D02295EF7DB00C54AB3 /* PlaySound.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		EF80D1DE295DAD4400241D2F /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
 		EFC04CFC295DB30800C54AB3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		EFC04CFE295DB4AE00C54AB3 /* ReelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelView.swift; sourceTree = "<group>"; };
+		EFC04D00295ED9C900C54AB3 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		EFC04D02295EF7DB00C54AB3 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,7 @@
 				EF80D1BC295D9D7100241D2F /* ContentView.swift */,
 				EF80D1DC295DAD0A00241D2F /* LogoView.swift */,
 				EFC04CFE295DB4AE00C54AB3 /* ReelView.swift */,
+				EFC04D00295ED9C900C54AB3 /* InfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -125,6 +130,7 @@
 			children = (
 				EF80D1DE295DAD4400241D2F /* Modifiers.swift */,
 				EFC04CFC295DB30800C54AB3 /* Extensions.swift */,
+				EFC04D02295EF7DB00C54AB3 /* PlaySound.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -208,11 +214,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFC04CFF295DB4AE00C54AB3 /* ReelView.swift in Sources */,
+				EFC04D03295EF7DB00C54AB3 /* PlaySound.swift in Sources */,
 				EFC04CFD295DB30800C54AB3 /* Extensions.swift in Sources */,
 				EF80D1DF295DAD4400241D2F /* Modifiers.swift in Sources */,
 				EF80D1BD295D9D7100241D2F /* ContentView.swift in Sources */,
 				EF80D1DD295DAD0A00241D2F /* LogoView.swift in Sources */,
 				EF80D1BB295D9D7100241D2F /* SlotMachineGameApp.swift in Sources */,
+				EFC04D01295ED9C900C54AB3 /* InfoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
